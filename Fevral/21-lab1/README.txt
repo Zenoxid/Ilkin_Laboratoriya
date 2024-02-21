@@ -1,0 +1,1 @@
+1-ci laboratoriya yaradildi
