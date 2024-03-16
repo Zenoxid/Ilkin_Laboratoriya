@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <?php
+$un="admin";
+$pw="12345";
+$ua="admin";
+$pa="12345";
+$lc=0;
+if ($lc<3){
+    if (( $un == $ua ) and ( $pw == $pa )) {?>
+
+        <p>Sisteme girildi</p>
+        
+        <?php
+        }
+        else{
+        ?>
+        <p>Username ve ya password yanlisdir</p>
+        <?php
+        $lc++;
+        }
+        
+}
+else {?>
+    <p>Hesab bloklandi</p>
+    <?php
+}?>
+</body>
+</html>
